@@ -1,0 +1,46 @@
+*{box-sizing: border-box;}
+
+body{font-family: tahoma;
+	background: linear-gradient(to right, rgba(70,130,180,0.25), rgba(70,130,180,0.85)),url("Pictures/Good.jfif");
+	background-position: top;
+	/*position: absolute;*/
+	background-size: auto;
+	background-attachment:cover;
+	
+	animation-name:cool;
+	animation: cool 20s linear infinite;
+	animation-direction:alternate;
+}
+
+@keyframes cool {
+	from {background-position:0 0}
+	to {background-position:90% 0}
+}
+
+h1{position:absolute;
+	top:30%;
+	left:50%;
+	transform: translate(-40%,-50%);}
+
+form{position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-40%,-50%);}
+
+input[type=search]{
+	width:260px;
+	height:60px;
+}
+
+input[type=search]:focus{outline:none;}
+
+footer{
+	width:100%;
+	text-align:center;
+	position:absolute;
+	top:90%;
+}
+
+a{
+	text-decoration:none;
+	color:steelblue;}
